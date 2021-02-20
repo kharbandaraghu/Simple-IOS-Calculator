@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bNm-jg-CMs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wkG-zl-4fR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="404"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Bdi-Gb-0Vk">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="404"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFB-g8-ziJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="202"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpB-iK-wwu">
+                                                                <rect key="frame" x="8" y="0.0" width="398" height="202"/>
+                                                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="27"/>
+                                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="BpB-iK-wwu" firstAttribute="leading" secondItem="vFB-g8-ziJ" secondAttribute="leading" constant="8" id="79N-Zj-cNV"/>
+                                                            <constraint firstItem="BpB-iK-wwu" firstAttribute="top" secondItem="vFB-g8-ziJ" secondAttribute="top" id="FEh-N4-NId"/>
+                                                            <constraint firstAttribute="trailing" secondItem="BpB-iK-wwu" secondAttribute="trailing" constant="8" id="hid-Go-iEP"/>
+                                                            <constraint firstAttribute="bottom" secondItem="BpB-iK-wwu" secondAttribute="bottom" id="jRE-vU-4LW"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="txx-Vc-WCZ">
+                                                        <rect key="frame" x="0.0" y="202" width="414" height="202"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2aE-BQ-Mzg">
+                                                                <rect key="frame" x="8" y="0.0" width="398" height="202"/>
+                                                                <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="27"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="2aE-BQ-Mzg" firstAttribute="top" secondItem="txx-Vc-WCZ" secondAttribute="top" id="E6j-ae-iDC"/>
+                                                            <constraint firstAttribute="bottom" secondItem="2aE-BQ-Mzg" secondAttribute="bottom" id="QZz-GH-jqV"/>
+                                                            <constraint firstItem="2aE-BQ-Mzg" firstAttribute="leading" secondItem="txx-Vc-WCZ" secondAttribute="leading" constant="8" id="XQx-so-VPK"/>
+                                                            <constraint firstAttribute="trailing" secondItem="2aE-BQ-Mzg" secondAttribute="trailing" constant="8" id="iPp-9D-ivB"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Bdi-Gb-0Vk" firstAttribute="top" secondItem="wkG-zl-4fR" secondAttribute="top" id="0uw-gA-A6A"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bdi-Gb-0Vk" secondAttribute="trailing" id="ZjR-XS-GoX"/>
+                                            <constraint firstItem="Bdi-Gb-0Vk" firstAttribute="leading" secondItem="wkG-zl-4fR" secondAttribute="leading" id="aD4-oY-ecC"/>
+                                            <constraint firstAttribute="bottom" secondItem="Bdi-Gb-0Vk" secondAttribute="bottom" id="c8D-iz-yws"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sgU-iY-CWs">
+                                        <rect key="frame" x="0.0" y="414" width="414" height="404"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="6KZ-tR-Zde">
+                                                <rect key="frame" x="8" y="0.0" width="398" height="404"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xHI-Gd-FQT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="398" height="74.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="NPo-9L-Shd">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="74.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="haG-tb-h8S">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="27"/>
+                                                                        <state key="normal" title="AC">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="ac:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OX7-7h-Uvz"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H72-tM-mgV">
+                                                                        <rect key="frame" x="101.5" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="27"/>
+                                                                        <state key="normal" title="(">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="bracketL:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qO2-1s-w4U"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyK-Ba-k68">
+                                                                        <rect key="frame" x="203" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="27"/>
+                                                                        <state key="normal" title=")">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="bracketR:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oco-yL-O3T"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6u0-fQ-qGI">
+                                                                        <rect key="frame" x="304.5" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" red="0.083971733365220499" green="0.58050506693748416" blue="0.83648276760317186" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="26"/>
+                                                                        <color key="tintColor" red="0.24043581711755119" green="0.54019709979035146" blue="0.86271972066224223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <state key="normal" title="÷">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="divide:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ujj-0b-DkM"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="NPo-9L-Shd" secondAttribute="trailing" id="HZp-Zb-dLA"/>
+                                                            <constraint firstItem="NPo-9L-Shd" firstAttribute="leading" secondItem="xHI-Gd-FQT" secondAttribute="leading" id="RAt-93-9Et"/>
+                                                            <constraint firstAttribute="bottom" secondItem="NPo-9L-Shd" secondAttribute="bottom" id="hrZ-en-hze"/>
+                                                            <constraint firstItem="NPo-9L-Shd" firstAttribute="top" secondItem="xHI-Gd-FQT" secondAttribute="top" id="ibO-9V-INa"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ACC-T6-eh6">
+                                                        <rect key="frame" x="0.0" y="82.5" width="398" height="74.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VNz-oO-dfs">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="74.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oiJ-dy-4tG">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="7">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="seveq:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oWX-Fb-kYD"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjh-1q-I0w">
+                                                                        <rect key="frame" x="101.5" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="8">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="eight:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ktc-hP-UJE"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mGo-xV-1Mb">
+                                                                        <rect key="frame" x="203" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="9">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="nine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nxk-Jp-Drq"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TvO-ni-LC1">
+                                                                        <rect key="frame" x="304.5" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" red="0.083971733365220499" green="0.58050506693748416" blue="0.83648276760317186" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="26"/>
+                                                                        <color key="tintColor" red="0.24043581711755119" green="0.54019709979035146" blue="0.86271972066224223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <state key="normal" title="x">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="multiply:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXH-Gv-9xB"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="VNz-oO-dfs" firstAttribute="top" secondItem="ACC-T6-eh6" secondAttribute="top" id="07o-8m-hLz"/>
+                                                            <constraint firstItem="VNz-oO-dfs" firstAttribute="leading" secondItem="ACC-T6-eh6" secondAttribute="leading" id="9fo-Tq-NpF"/>
+                                                            <constraint firstAttribute="trailing" secondItem="VNz-oO-dfs" secondAttribute="trailing" id="Fnc-zd-7Uv"/>
+                                                            <constraint firstAttribute="bottom" secondItem="VNz-oO-dfs" secondAttribute="bottom" id="cmj-OH-ny0"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KHt-u8-2OG">
+                                                        <rect key="frame" x="0.0" y="165" width="398" height="74"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zC6-JZ-Wcp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="74"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fva-BH-Jag">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="74"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="4">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="four:" destination="BYZ-38-t0r" eventType="touchUpInside" id="njO-sg-r7t"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jt4-na-abu">
+                                                                        <rect key="frame" x="101.5" y="0.0" width="93.5" height="74"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="5">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="five:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H2I-az-xQ0"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jud-Yu-5hp">
+                                                                        <rect key="frame" x="203" y="0.0" width="93.5" height="74"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="6">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="six:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Pi-kj-Ugq"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h6e-cP-uD8">
+                                                                        <rect key="frame" x="304.5" y="0.0" width="93.5" height="74"/>
+                                                                        <color key="backgroundColor" red="0.083971733365220499" green="0.58050506693748416" blue="0.83648276760317186" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="26"/>
+                                                                        <color key="tintColor" red="0.24043581711755119" green="0.54019709979035146" blue="0.86271972066224223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <state key="normal" title="-">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="minus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vgp-GQ-MjP"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="zC6-JZ-Wcp" firstAttribute="top" secondItem="KHt-u8-2OG" secondAttribute="top" id="36O-Wq-nx9"/>
+                                                            <constraint firstItem="zC6-JZ-Wcp" firstAttribute="leading" secondItem="KHt-u8-2OG" secondAttribute="leading" id="7hc-1h-dSh"/>
+                                                            <constraint firstAttribute="bottom" secondItem="zC6-JZ-Wcp" secondAttribute="bottom" id="ai4-Sa-irh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="zC6-JZ-Wcp" secondAttribute="trailing" id="lMJ-Kh-IVv"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J13-ng-fiL">
+                                                        <rect key="frame" x="0.0" y="247" width="398" height="74.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fo6-On-ddp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="74.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fr-cv-QgK">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="1">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="one:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ro1-aS-jqG"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c2K-23-WNi">
+                                                                        <rect key="frame" x="101.5" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="2">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="two:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cP3-iA-iyU"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mr0-2d-0At">
+                                                                        <rect key="frame" x="203" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="3">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="three:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wqB-fd-VHg"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sdc-AV-sUk">
+                                                                        <rect key="frame" x="304.5" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" red="0.083971733365220499" green="0.58050506693748416" blue="0.83648276760317186" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="26"/>
+                                                                        <color key="tintColor" red="0.24043581711755119" green="0.54019709979035146" blue="0.86271972066224223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <state key="normal" title="+">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="plus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5qP-a2-PgE"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstItem="fo6-On-ddp" firstAttribute="top" secondItem="J13-ng-fiL" secondAttribute="top" id="3I5-Kq-92N"/>
+                                                            <constraint firstAttribute="bottom" secondItem="fo6-On-ddp" secondAttribute="bottom" id="Y9L-2h-OUf"/>
+                                                            <constraint firstAttribute="trailing" secondItem="fo6-On-ddp" secondAttribute="trailing" id="cGE-RS-Dd2"/>
+                                                            <constraint firstItem="fo6-On-ddp" firstAttribute="leading" secondItem="J13-ng-fiL" secondAttribute="leading" id="zOC-63-c89"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eYE-Ym-MIk">
+                                                        <rect key="frame" x="0.0" y="329.5" width="398" height="74.5"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="g4v-gW-dqn">
+                                                                <rect key="frame" x="0.0" y="0.0" width="398" height="74.5"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbu-q1-9c6">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="0">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="zero:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZHK-ZZ-cpV"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5A9-IR-zXZ">
+                                                                        <rect key="frame" x="101.5" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title="Del">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="Del:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xB-Ze-AB3"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwR-fC-ZO0">
+                                                                        <rect key="frame" x="203" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="25"/>
+                                                                        <state key="normal" title=".">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="point:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d9i-RC-la7"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWD-MA-zNW">
+                                                                        <rect key="frame" x="304.5" y="0.0" width="93.5" height="74.5"/>
+                                                                        <color key="backgroundColor" red="0.083971733365220499" green="0.58050506693748416" blue="0.83648276760317186" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <fontDescription key="fontDescription" name="Galvji" family="Galvji" pointSize="26"/>
+                                                                        <color key="tintColor" red="0.24043581711755119" green="0.54019709979035146" blue="0.86271972066224223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        <state key="normal" title="=">
+                                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                        </state>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                                                <integer key="value" value="25"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="equal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ch-qr-vHc"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <constraints>
+                                                            <constraint firstAttribute="bottom" secondItem="g4v-gW-dqn" secondAttribute="bottom" id="4Vb-fJ-8zg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="g4v-gW-dqn" secondAttribute="trailing" id="9eO-zx-OpJ"/>
+                                                            <constraint firstItem="g4v-gW-dqn" firstAttribute="leading" secondItem="eYE-Ym-MIk" secondAttribute="leading" id="KSZ-rb-Fzi"/>
+                                                            <constraint firstItem="g4v-gW-dqn" firstAttribute="top" secondItem="eYE-Ym-MIk" secondAttribute="top" id="fBm-PG-KpI"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="6KZ-tR-Zde" firstAttribute="leading" secondItem="sgU-iY-CWs" secondAttribute="leading" constant="8" id="OEq-fh-ATA"/>
+                                            <constraint firstItem="6KZ-tR-Zde" firstAttribute="top" secondItem="sgU-iY-CWs" secondAttribute="top" id="XUq-Up-9aY"/>
+                                            <constraint firstAttribute="trailing" secondItem="6KZ-tR-Zde" secondAttribute="trailing" constant="8" id="Zel-Xn-6nO"/>
+                                            <constraint firstAttribute="bottom" secondItem="6KZ-tR-Zde" secondAttribute="bottom" id="icQ-ra-laS"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.027422481110000001" blue="0.035332467819999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bNm-jg-CMs" secondAttribute="trailing" id="e2D-eH-bdX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bNm-jg-CMs" secondAttribute="bottom" id="esn-Vh-ZZ8"/>
+                            <constraint firstItem="bNm-jg-CMs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ogo-Rm-XvS"/>
+                            <constraint firstItem="bNm-jg-CMs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vVu-aH-mMO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labeldown" destination="2aE-BQ-Mzg" id="zGk-ex-FMM"/>
+                        <outlet property="labelup" destination="BpB-iK-wwu" id="MWJ-fR-n0l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="113.83928571428571"/>
+        </scene>
+    </scenes>
+</document>
